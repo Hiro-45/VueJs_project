@@ -1,7 +1,7 @@
 <template>
   <v-container fluid fill-height>
-    <v-layout align-center justify-center>
-      <v-flex xs12 sm8 md4>
+    <v-row align="center" justify="center">
+      <v-col xs="12" sm="8" md="4" lg="4">
         <v-card class="elevation-12">
           <v-toolbar dark color="primary">
             <v-toolbar-title>Registration form</v-toolbar-title>
@@ -44,8 +44,8 @@
               :disabled="!valid">Create account</v-btn>
           </v-card-actions>
         </v-card>
-      </v-flex>
-    </v-layout>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -84,3 +84,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .elevation-12 {
+
+  }
+</style>
